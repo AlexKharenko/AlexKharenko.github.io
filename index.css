@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    position: relative;
+    width:100%;
+}
+
+.nav-bar{
+    position:sticky;
+    top:0;
+    width:100%;
+    height:50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    z-index: 10;
+}
+
+.logo{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.welcome-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background: linear-gradient(0.25turn, blue, rgb(248, 180, 191));
+}
+
+.welcome-text-container{
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-text-container h1{
+    margin-bottom: 60px;;
+}
+
+.welcome-text-container h3{
+    margin-bottom:10px;
+}
+
+.welcome-container img{
+    height: 80vh;
+    border-radius: 50%;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:800px){
+
+    .welcome-text-container{
+        font-size: 15px;
+    }
+
+    .welcome-container img{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width:640px){
+
+    .welcome-text-container{
+        font-size: 15px;
+    }
+
+    .welcome-container img{
+        height: 40vh;
+    }
+}
+
+
+
+
+.projects-block{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.projects-block h1{
+    position: sticky;
+    top:40px;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 200%;
+    z-index:12;
+}
+
+.projects-grid-container{
+    position: relative;
+    width: 80%;
+    margin: 20px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-element{
+    position: relative;
+    min-height: 120px;
+   text-align: center;
+   box-shadow: 5px 5px 5px 1px rgba(25, 25, 26, 0.3);
+   border-radius: 5px;
+}
+
+.element img{
+    min-height: 70px;
+    max-width: 500px;
+    margin: 5px 0;
+}
+
+.element a{
+    position: relative;
+    text-decoration: none;
+    color:black;
+}
+
+.button-more{
+    position: inherit;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 250px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: rgba(247, 7, 7, 0.781);
+    border-radius: 7px;
+    color:white;
+    transition: background-color 0.3s;
+}
+
+.button-more:hover{
+    background-color: rgba(247, 7, 7, 0.641);
+}
+
+@media screen and (max-width:1250px){
+    .element img{
+        min-height: 40px;
+        max-width: 300px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width:1030px){
+    .projects-grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .element img{
+        min-height: 70px;
+        max-width: 500px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width:640px){
+    .element img{
+        min-height: 40px;
+        max-width: 300px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width:360px){
+    .element img{
+        min-height: 30px;
+        max-width: 240px;
+        margin: 5px 0;
+    }
+}
+
+
+.footer-container{
+    position: relative;
+    background-color: black;
+}
+
+.social-media{
+    position: relative;
+    padding: 30px 0;
+}
+
+.social-media ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.social-media ul a{
+    position: relative;
+    margin: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+
+.social-media ul a li{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.social-media ul a li img{
+    height: 34px;
+    width: 34px; 
+    margin-right: 5px;   
+}
+
+.created{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:640px){
+    .social-media ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .social-media ul a li{
+       justify-content: center;
+    }
+
+}
